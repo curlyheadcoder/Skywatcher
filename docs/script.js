@@ -27,7 +27,6 @@ function getCurrentImageOfTheDay() {
       console.error("Error fetching current image:", error);
     });
 }
-
 function getImageOfTheDay(date) {
   const url = `https://api.nasa.gov/planetary/apod?api_key=${API_KEY}&date=${date}`;
   fetch(url)
